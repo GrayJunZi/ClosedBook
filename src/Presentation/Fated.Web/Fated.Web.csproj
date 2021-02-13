@@ -6,10 +6,9 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\assets\" />
-    <Folder Include="wwwroot\fonts\" />
     <Folder Include="wwwroot\imgs\" />
+    <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
 </Project>

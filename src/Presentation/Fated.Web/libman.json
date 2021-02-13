@@ -2,6 +2,9 @@
   "version": "1.0",
   "defaultProvider": "cdnjs",
   "libraries": [
+    /*
+    * Bootstrap & jQuery
+    */
     {
       "library": "twitter-bootstrap@5.0.0-beta2",
       "destination": "wwwroot/lib/bootstrap/"
@@ -19,30 +22,100 @@
       "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
     },
     {
+      "library": "popper.js@2.6.0",
+      "destination": "wwwroot/lib/jquery-popper/"
+    },
+    /*
+    * Fonts & Icons 
+    */
+    {
       "library": "font-awesome@5.15.2",
-      "destination": "wwwroot/fonts/font-awesome/"
+      "destination": "wwwroot/fonts/icons/font-awesome/"
     },
     {
       "provider": "unpkg",
       "library": "@icon/icofont@1.0.1-alpha.1",
-      "destination": "wwwroot/fonts/icofont/"
+      "destination": "wwwroot/fonts/icons/icofont/"
     },
     {
       "provider": "unpkg",
       "library": "@icon/themify-icons@1.0.1-alpha.3",
-      "destination": "wwwroot/fonts/themify/"
+      "destination": "wwwroot/fonts/icons/themify-icons/"
     },
     {
       "library": "flag-icon-css@3.5.0",
-      "destination": "wwwroot/fonts/flag-icon/"
+      "destination": "wwwroot/fonts/icons/flag-icon/"
     },
     {
+      "provider": "unpkg",
       "library": "feather-icons@4.28.0",
-      "destination": "wwwroot/fonts/feather-icons/"
+      "destination": "wwwroot/fonts/icons/feather-icons/"
     },
+    /*
+    * Scrollbar
+    */
     {
       "library": "simplebar@5.3.0",
       "destination": "wwwroot/assets/vendors/simplebar/"
+    },
+    /*
+    * Charts
+    */
+    {
+      "library": "chartist@0.11.4",
+      "destination": "wwwroot/assets/vendors/chartist/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "chartist-plugin-tooltips-updated@0.1.4",
+      "destination": "wwwroot/assets/vendors/chartist-plugin-tooltip/",
+      "files": [ "dist/chartist-plugin-tooltip.css", "dist/chartist-plugin-tooltip.css.map", "dist/chartist-plugin-tooltip.js", "dist/chartist-plugin-tooltip.min.js", "dist/chartist-plugin-tooltip.min.js.map" ]
+    },
+    {
+      "library": "jQuery-Knob@1.2.13",
+      "destination": "wwwroot/lib/jquery-knob/"
+    },
+    {
+      "library": "apexcharts@3.24.0",
+      "destination": "wwwroot/assets/vendors/apexcharts/",
+      "files": [ "apexcharts.css", "apexcharts.min.css", "apexcharts.js", "apexcharts.min.js", "locales/zh-cn.json" ]
+    },
+    /*
+    * Notify & Toast
+    */
+    {
+      "library": "bootstrap-notify@0.2.0",
+      "destination": "wwwroot/lib/bootstrap-notify/"
+    },
+    /*
+    * Datepicker & Date Time Picker & Date Range Picker
+    */
+    {
+      "library": "air-datepicker@2.2.3",
+      "destination": "wwwroot/assets/vendors/air-datepicker/",
+      "files": [ "css/datepicker.css", "css/datepicker.min.css", "js/datepicker.js", "js/datepicker.min.js", "js/i18n/datepicker.zh.js" "js/i18n/datepicker.zh.min.js", "js/i18n/datepicker.zh.min.js.map" ]
+    },
+    /*
+    * Animation
+    */
+    {
+      "library": "gsap@3.6.0",
+      "destination": "wwwroot/assets/vendors/gsap/"
+    },
+    {
+      "library": "animate.css@4.1.1",
+      "destination": "wwwroot/assets/vendors/animate/"
+    },
+    /*
+    * Typeahead
+    */
+    {
+      "library": "handlebars.js@4.7.6",
+      "destination": "wwwroot/assets/vendors/handlebars/"
+    },
+    {
+      "library": "typeahead.js@0.11.1",
+      "destination": "wwwroot/assets/vendors/typeahead/"
     }
   ]
 }

@@ -3,11 +3,12 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     /*
-    * Bootstrap & jQuery
+    * jQuery & Bootstrap
     */
     {
       "library": "twitter-bootstrap@5.0.0-beta2",
-      "destination": "wwwroot/lib/bootstrap/"
+      "destination": "wwwroot/lib/bootstrap/",
+      "files": [ "css/bootstrap.css", "css/bootstrap.css.map", "css/bootstrap.min.css", "css/bootstrap.min.css.map", "js/bootstrap.js", "js/bootstrap.js.map", "js/bootstrap.min.js", "js/bootstrap.min.js.map" ]
     },
     {
       "library": "jquery@3.5.1",
@@ -15,7 +16,8 @@
     },
     {
       "library": "jquery-validate@1.19.2",
-      "destination": "wwwroot/lib/jquery-validation/"
+      "destination": "wwwroot/lib/jquery-validation/",
+      "files": [ "jquery.validate.js", "jquery.validate.min.js", "localization/messages_zh.js", "localization/messages_zh.min.js" ]
     },
     {
       "library": "jquery-validation-unobtrusive@3.2.12",
@@ -23,99 +25,33 @@
     },
     {
       "library": "popper.js@2.6.0",
-      "destination": "wwwroot/lib/jquery-popper/"
+      "destination": "wwwroot/lib/jquery-popper/",
+      "files": [ "umd/popper.js", "umd/popper.js.map", "umd/popper.min.js", "umd/popper.min.js.map" ]
     },
     /*
     * Fonts & Icons 
     */
     {
       "library": "font-awesome@5.15.2",
-      "destination": "wwwroot/fonts/icons/font-awesome/"
+      "destination": "wwwroot/fonts/font-awesome/"
     },
     {
       "provider": "unpkg",
-      "library": "@icon/icofont@1.0.1-alpha.1",
-      "destination": "wwwroot/fonts/icons/icofont/"
+      "library": "@icon/feather@4.28.0-alpha.0",
+      "destination": "wwwroot/fonts/feather-icons/",
+      "files": [ "feather.css", "feather.eot", "feather.svg", "feather.ttf", "feather.woff", "feather.woff2" ]
     },
     {
-      "provider": "unpkg",
-      "library": "@icon/themify-icons@1.0.1-alpha.3",
-      "destination": "wwwroot/fonts/icons/themify-icons/"
+      "library": "izitoast@1.4.0",
+      "destination": "wwwroot/assets/vendors/iziToast/"
     },
     {
-      "library": "flag-icon-css@3.5.0",
-      "destination": "wwwroot/fonts/icons/flag-icon/"
+      "library": "OwlCarousel2@2.3.4",
+      "destination": "wwwroot/assets/vendors/OwlCarousel2/"
     },
     {
-      "provider": "unpkg",
-      "library": "feather-icons@4.28.0",
-      "destination": "wwwroot/fonts/icons/feather-icons/"
-    },
-    /*
-    * Scrollbar
-    */
-    {
-      "library": "simplebar@5.3.0",
-      "destination": "wwwroot/assets/vendors/simplebar/"
-    },
-    /*
-    * Charts
-    */
-    {
-      "library": "chartist@0.11.4",
-      "destination": "wwwroot/assets/vendors/chartist/"
-    },
-    {
-      "provider": "unpkg",
-      "library": "chartist-plugin-tooltips-updated@0.1.4",
-      "destination": "wwwroot/assets/vendors/chartist-plugin-tooltip/",
-      "files": [ "dist/chartist-plugin-tooltip.css", "dist/chartist-plugin-tooltip.css.map", "dist/chartist-plugin-tooltip.js", "dist/chartist-plugin-tooltip.min.js", "dist/chartist-plugin-tooltip.min.js.map" ]
-    },
-    {
-      "library": "jQuery-Knob@1.2.13",
-      "destination": "wwwroot/lib/jquery-knob/"
-    },
-    {
-      "library": "apexcharts@3.24.0",
-      "destination": "wwwroot/assets/vendors/apexcharts/",
-      "files": [ "apexcharts.css", "apexcharts.min.css", "apexcharts.js", "apexcharts.min.js", "locales/zh-cn.json" ]
-    },
-    /*
-    * Notify & Toast
-    */
-    {
-      "library": "bootstrap-notify@0.2.0",
-      "destination": "wwwroot/lib/bootstrap-notify/"
-    },
-    /*
-    * Datepicker & Date Time Picker & Date Range Picker
-    */
-    {
-      "library": "air-datepicker@2.2.3",
-      "destination": "wwwroot/assets/vendors/air-datepicker/",
-      "files": [ "css/datepicker.css", "css/datepicker.min.css", "js/datepicker.js", "js/datepicker.min.js", "js/i18n/datepicker.zh.js" "js/i18n/datepicker.zh.min.js", "js/i18n/datepicker.zh.min.js.map" ]
-    },
-    /*
-    * Animation
-    */
-    {
-      "library": "gsap@3.6.0",
-      "destination": "wwwroot/assets/vendors/gsap/"
-    },
-    {
-      "library": "animate.css@4.1.1",
-      "destination": "wwwroot/assets/vendors/animate/"
-    },
-    /*
-    * Typeahead
-    */
-    {
-      "library": "handlebars.js@4.7.6",
-      "destination": "wwwroot/assets/vendors/handlebars/"
-    },
-    {
-      "library": "typeahead.js@0.11.1",
-      "destination": "wwwroot/assets/vendors/typeahead/"
+      "library": "Swiper@6.4.11",
+      "destination": "wwwroot/assets/vendors/Swiper/"
     }
   ]
 }

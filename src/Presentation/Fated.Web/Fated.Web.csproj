@@ -5,10 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\assets\plugins\" />
+    <Folder Include="wwwroot\assets\vendors\" />
     <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\assets\" />
-    <Folder Include="wwwroot\imgs\" />
     <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Fated.Application\Fated.Application.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,3 +1,45 @@
-﻿@{
+﻿@model RegisterViewModel
+@{
     ViewData["Title"] = "注册";
 }
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-center">
+                        <h2>
+                            @ViewData["Title"]
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <form asp-controller="Account" asp-action="Login" method="post">
+                            <div class="mb-3 row">
+                                <label asp-for="UserName" class="col-sm-2 col-form-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="" asp-for="UserName">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label asp-for="Email" class="col-sm-2 col-form-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" placeholder="" asp-for="Email" />
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label asp-for="Password" class="col-sm-2 col-form-label"></label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" asp-for="Password">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <button type="submit" class="btn btn-primary">注册</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
